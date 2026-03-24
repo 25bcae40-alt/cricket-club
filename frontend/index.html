@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Strikers Cricket Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Mouse glow follower -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="logo">🏏 Royal Strikers CC</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#players">Players</a></li>
+      <li><a href="#matches">Matches</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#developer">Developer</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1 class="hero-title">ROYAL<br/><span>STRIKERS</span></h1>
+      <p class="hero-sub">Cricket isn't just a game — it's a passion.</p>
+      <a href="#contact" class="btn-primary">Join the Club</a>
+    </div>
+    <div class="hero-ball" id="heroBall">🏏</div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section" id="about">
+    <h2 class="section-title">About the Club</h2>
+    <div class="about-grid">
+      <div class="about-card" data-tilt>
+        <span class="icon">🏆</span>
+        <h3>Est. 2010</h3>
+        <p>Founded with the spirit of sportsmanship and excellence in cricket.</p>
+      </div>
+      <div class="about-card" data-tilt>
+        <span class="icon">👥</span>
+        <h3>50+ Members</h3>
+        <p>A growing family of passionate cricketers from all backgrounds.</p>
+      </div>
+      <div class="about-card" data-tilt>
+        <span class="icon">🎯</span>
+        <h3>District Champions</h3>
+        <p>Winners of the Bangalore District T20 League 2023 & 2024.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PLAYERS SECTION ========== -->
+  <section class="section dark" id="players">
+    <h2 class="section-title light">Our Players</h2>
+    <div class="players-grid">
+      <div class="player-card" data-tilt>
+        <div class="player-img">🧑‍🦱</div>
+        <h3>Arjun Mehta</h3>
+        <p>Captain · All-Rounder</p>
+        <span class="badge">Top Scorer 2024</span>
+      </div>
+      <div class="player-card" data-tilt>
+        <div class="player-img">👨‍🦲</div>
+        <h3>Ravi Kumar</h3>
+        <p>Vice Captain · Fast Bowler</p>
+        <span class="badge">Best Bowler 2023</span>
+      </div>
+      <div class="player-card" data-tilt>
+        <div class="player-img">🧔</div>
+        <h3>Siddharth R</h3>
+        <p>Wicketkeeper · Batsman</p>
+        <span class="badge">Best Keeper</span>
+      </div>
+      <div class="player-card" data-tilt>
+        <div class="player-img">👦</div>
+        <h3>Deepak Nair</h3>
+        <p>Opening Batsman</p>
+        <span class="badge">Rising Star</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MATCHES SECTION ========== -->
+  <section class="section" id="matches">
+    <h2 class="section-title">Upcoming Matches</h2>
+    <div class="matches-list">
+      <div class="match-card" data-tilt>
+        <div class="match-date">Apr 5, 2026</div>
+        <div class="match-info">
+          <strong>Royal Strikers CC</strong> vs <strong>Thunder Hawks CC</strong>
+        </div>
+        <div class="match-venue">📍 Chinnaswamy Stadium, Bangalore</div>
+        <span class="match-badge">T20 League</span>
+      </div>
+      <div class="match-card" data-tilt>
+        <div class="match-date">Apr 18, 2026</div>
+        <div class="match-info">
+          <strong>Royal Strikers CC</strong> vs <strong>City Lions CC</strong>
+        </div>
+        <div class="match-venue">📍 KSCA Ground, Bangalore</div>
+        <span class="match-badge">Friendly</span>
+      </div>
+      <div class="match-card" data-tilt>
+        <div class="match-date">May 2, 2026</div>
+        <div class="match-info">
+          <strong>Royal Strikers CC</strong> vs <strong>Storm Riders CC</strong>
+        </div>
+        <div class="match-venue">📍 Alur Ground, Bangalore</div>
+        <span class="match-badge">District Cup</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section dark" id="contact">
+    <h2 class="section-title light">Join / Contact Us</h2>
+    <div class="contact-wrapper">
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="nameInput" placeholder="Your Name" required />
+        <input type="email" id="emailInput" placeholder="Your Email" required />
+        <textarea id="messageInput" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Send Message 🏏</button>
+        <p id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== DEVELOPER SECTION ========== -->
+  <section class="section" id="developer">
+    <h2 class="section-title">Developer</h2>
+    <div class="dev-card" data-tilt>
+      <div class="dev-avatar">👨‍💻</div>
+      <div class="dev-info">
+        <h3 class="dev-name">Siva</h3>
+        <p><span class="dev-label">🎓 College:</span> Kristu Jayanti University</p>
+        <p><span class="dev-label">📚 Course:</span> BCA (Bachelor of Computer Applications)</p>
+        <p><span class="dev-label">💡 Role:</span> Full Stack Developer</p>
+        <p><span class="dev-label">🛠 Stack:</span> HTML · CSS · JavaScript · Node.js · PostgreSQL · Render</p>
+        <div class="dev-links">
+          <a href="https://github.com/" target="_blank" class="btn-outline">GitHub 🔗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>©️ 2026 Royal Strikers Cricket Club · Built by <strong>Siva</strong> · Kristu Jayanti University</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
